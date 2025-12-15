@@ -89,7 +89,7 @@ function App() {
       <div className="max-w-[1200px] p-5 mt-1 m-auto flex justify-between items-end">
         <div>
           <h1 className={`text-xl sm:text-2xl font-bold ${textColor}`}>
-            Welcome {user.userName},
+            Welcome {user?.userName},
           </h1>
           <p className={`${textColor} text-sm sm:text-base`}>
             Find all todos
