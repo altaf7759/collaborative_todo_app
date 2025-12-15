@@ -144,7 +144,7 @@ function App() {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-7 max-w-[1200px] m-auto p-5">
           {todos.map((todo) => (
             <Card key={todo._id}
-              className={`${theme.mode === "dark" ? "bg-[#393a3a] text-white" : "bg-[#d4dce5] text-[#4b5563]"} border-0`}
+              className={`${theme.mode === "dark" ? "bg-[#393a3a] text-white" : "bg-[#d4dce5] text-[#4b5563]"} border-0 h-fit`}
             >
               <CardHeader>
                 <CardTitle>{todo.title}</CardTitle>
