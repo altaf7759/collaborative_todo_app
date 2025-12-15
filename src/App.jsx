@@ -26,12 +26,9 @@ function App() {
 
   const textColor = theme.mode === "dark" ? "text-white" : "text-[#1f2937]"
   const bg = theme.mode === "dark" ? "bg-[#2c2d2d]" : "bg-[#f7f7f7]"
-
+  
   useEffect(() => {
     if (!user) navigate("/auth")
-  }, [user, navigate])
-
-  useEffect(() => {
     const getAllTodos = async () => {
       setIsTodosLoading(true)
       try {
