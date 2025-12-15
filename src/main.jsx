@@ -7,7 +7,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Auth from './components/Auth.jsx'
 import Navbar from "./components/Navbar.jsx"
 import TodoDetails from './components/todoDetails.jsx'
-import AcceptInvitation from '@/components/acceptInvitation.jsx'
+import AcceptInvitation from '@/components/AcceptInvitation.jsx'
 import Profile from './components/Profile.jsx'
 
 createRoot(document.getElementById('root')).render(
