@@ -25,6 +25,13 @@ const Auth = () => {
   const token = searchParams.get("token");
   const email = searchParams.get("email")
   const todoId = searchParams.get("todoId")
+  const { user } = useAppContext()
+
+  useEffect(() => {
+    if (user) {
+      navigate("/")
+    }
+  }, [])
 
   const [form, setForm] = useState({
     userName: "",

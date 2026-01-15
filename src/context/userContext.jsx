@@ -3,7 +3,7 @@ import { createContext, useContext, useState, useEffect } from "react";
 export const AppContext = createContext();
 
 export const AppProvider = ({ children }) => {
-  const [user, setUser] = useState(JSON.parse(localStorage.getItem("user")));
+  const [user, setUser] = useState(JSON.parse(localStorage.getItem("user")) || null);
   const [theme, setTheme] = useState({ mode: "dark" });
 
   // Automatically update body background on theme change

@@ -29,7 +29,7 @@ function App() {
 
   useEffect(() => {
     if (!user) navigate("/auth")
-  }, [user, navigate])
+  }, [])
 
   useEffect(() => {
     const getAllTodos = async () => {
